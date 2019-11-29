@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+ 
+
+ 
+.home{
+  
+   background: url("https://images.unsplash.com/photo-1485739139909-d0d1783a7196?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80") no-repeat top center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+
+}
+ 
+.booking{
+     position: relative;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   width: 100%;
+    max-width: 500px;
+    height: auto;
+    background: rgba(0,0,0,0.7);
+    padding: 40px 50px;
+    border-radius: 5px;
+}
+ 
+
+ 
+.ftitle{
+    font-size: 2em;
+    line-height: 1.25em;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: #ffc107;
+    padding-bottom: 15px;
+}
+select {
+    width: 100%;
+    height:250px;
+    position: relative;
+    background: white;
+    opacity: 0.50;
+    height: 5vh;
+    margin: auto;
+    margin-bottom: 15px;
+    color: black;
+    }
+
+.form-control{
+    width: 100%;
+    height:5vh;
+    position: relative;
+    background: white;
+    opacity: 0.50;
+    margin: auto;
+    margin-bottom: 15px;
+    color: black;
+    font-weight: 200;
+    
+}
+ 
+
+.btn{
+
+    background: #ffc107;
+    font-size: 1.25em;  
+   
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;  
+    height: 5vh;
+    width: auto;
+    color: black;
+    display: block;
+    margin: auto;
+}
+ 
+
+ 
+/* jquery code */
+.inputfield .fitems .input.active .label .way{
+    font-size: 15px;
+    top: 0;
+}
+ 
+@media screen and (max-width:1200px and min-width:601px){
+    .inputfield .way {
+        padding: 0;
+    }
+    .booking{
+        width:100%;
+
+       
+        
+    }
+    select{
+        width:100%;
+    }
+    .ftitle{
+        
+    }
+}
