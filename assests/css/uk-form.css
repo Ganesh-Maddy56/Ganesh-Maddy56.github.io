@@ -1,0 +1,107 @@
+.booking{
+        max-width: 400px;
+    width: 100%;
+    background-color: #ffffff;
+    margin-left: 20px;
+    margin-right: auto;
+    position: relative;
+    padding: 40px 30px;
+    top: 30px;
+    z-index: 200;
+    height: auto;
+    border-radius: 20px;
+
+}
+
+
+
+ 
+.ftitle{
+    font-family: 'gentona';
+    font-size: 1em;
+    line-height: 1.25em;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #000;
+    padding-bottom: 20px;
+}
+select {
+    width: 100%;
+    height:250px;
+    position: relative;
+    background: white;
+    
+    height: 5vh;
+    margin: auto;
+    margin-bottom: 15px !important;
+    color: black;
+    }
+
+.form-control{
+    width: 100%;
+    height:5vh;
+    position: relative;
+    background: white;
+    margin: auto;
+    margin-bottom: 15px;
+    color: black;
+    font-weight: 200;
+    border: 1px solid #000;
+    
+}
+ 
+
+.btn{
+
+    background: #67d1d2;
+    font-size: 1em;  
+    font-family: 'Gentona';
+   
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 200;  
+    height: 5vh;
+    width: 100%;
+    color: black;
+    display: block;
+    margin: auto;
+}
+ 
+
+ 
+/* jquery code */
+.inputfield .fitems .input.active .label .way{
+    font-size: 15px;
+    top: 0;
+}
+ 
+@media (max-width: 979px){
+    .inputfield .way {
+        padding: 0;
+    }
+   
+    select{
+        width:100%;
+    }
+    .ftitle{
+        
+    }
+}
+
+@media (max-width: 979px){
+    .booking{
+        max-width:100%;
+        background: #fff !important;
+        z-index: 100;
+        top: -90px !important;
+        margin-left: 0px;
+        margin-right: 0px;
+
+       
+        
+    }
+}

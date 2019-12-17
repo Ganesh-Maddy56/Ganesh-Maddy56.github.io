@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Neuton&display=swap');
+
+
+@media only screen and (max-width: 768px)
+.uk-body{
+    padding-top: 0;
+    
+    
+}
+
+
+
+body {
+margin: 0;
+padding: 0;
+width: 100%;
+float: left;
+font-size: 14px;
+font-family: 'Gentona';
+background: #FFFFFF;
+font-weight: 300;
+    
+}
+
+
+.uk-image img{
+    width: 50%;
+    height: 35%;
+    object-fit: cover;
+    overflow: hidden;
+    vertical-align: middle;
+    padding: 10px;
+    padding-top: 20px !important;
+     -webkit-filter: drop-shadow(5px 5px 5px #222 );
+  filter: drop-shadow(5px 5px 5px #222);
+}
+    
+}
+
+.uk-image{
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    vertical-align: middle;
+    
+   
+}
+
+.display-3 {
+    font-family: 'Neuton', serif;
+    font-weight: 200;
+    font-size: 2.5em;
+    padding-bottom: 20px;
+    vertical-align: middle;
+    text-align: left;
+    color: #3d7ec5;
+}
+
+
+.uk-lead{
+    font-family: 'Neuton', serif;
+    color: #000;
+    padding: 20px;
+    padding-left: 0px !important;
+    font-size: 1.3em;
+    font-weight: 50;
+    padding-top: 5px !important;
+    text-align: left;
+}
+
+.uk-about{
+    width:70%;
+    position: relative;
+    display: block;
+    height: auto;
+    display: block;
+}
+.uk-add{
+   font-family: 'Neuton', serif;
+    font-weight: 200;
+    font-size: 3.3em;
+    padding-bottom: 10px;
+    vertical-align: middle;
+    text-align: center;
+    padding-top: 10px;
+    
+}
+
+.uk-ri{
+    padding-left: 60px;
+}
+.uk-textr{
+    padding-left: 80px;
+}
+.blue{
+    
+    color:#67d1d2;
+}
+
+@media (max-width: 979px){
+    .uk-about{
+        width: 100%;
+        
+    }
+    
+    .uk-lead{
+        font-size: 16px;
+        padding: 10px !important;
+        text-align: center;
+    }
+    .display-3{
+        font-size: 25px;
+        padding-bottom: 0px;
+        text-align: center;
+    }
+    .uk-image img{
+        width: 100%;
+        padding-top: 10px !important;
+    }
+    .uk-image{
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        
+    }
+    .uk-ri{
+        padding-left: 0px;
+    }
+    .uk-textr{
+        padding-left: 0px;
+    }
+}

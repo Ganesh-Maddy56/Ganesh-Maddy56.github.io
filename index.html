@@ -1,58 +1,76 @@
 <html>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <head>
-        
-          <link rel="stylesheet" href="./assests/css/navbar.css">
-        
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=AIzaSyCV_e29ZNv8f0S3-2IzNwIPqc-ycslxNBE"></script>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+    UK-TAXI
+    </title>
+     <!--AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <!--/AOS-->
+    <!--bootstrap-->
+ 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-
-        
-        
-        <link rel="stylesheet" href="./assests/css/boostrap.css" >
-        
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        
-        
-  
-    <link rel="stylesheet" href="./assests/css/form.css">
-        <link rel="stylesheet" href="./assests/css/common.css">
-         <link rel="stylesheet" href="./assests/css/footer.css">
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        
-        <script src="./assests/js/navbar.js"></script>
-    </head>
+  <!---->  
+    <!--external css-->
+    <link rel="stylesheet" href="./assests/css/uk-navbar.css">
+    <link rel="stylesheet" href="./assests/css/uk-home.css">
+     <link rel="stylesheet" href="./assests/css/uk-form.css">
+     <link rel="stylesheet" href="./assests/css/uk-common.css">
+    <link rel="stylesheet" href="./assests/css/uk-feedback.css">
+    <link rel="stylesheet" href="./assests/css/uk-footer.css">
+    <link rel="stylesheet" href="./assests/css/uk-features.css">
+    <!---->
+</head>
     
-    <nav class="nav">
-        <div class="container">
-            <div class="logo">
-                <a href=".home"><img src = "https://minicabee.co.uk/assets/images/logo.png"></a>
+    <body class="uk-body">
+    
+        <!--nav-->
+        <header class="uk-header sticky">
+             <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+      <div class="uk-max-width">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#my-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+        <div class="navbar-brand">
+      <a class="" href="#"><img src="http://www.fasttrackcabs.com/css/img/logo.svg" style="width:150px; margin:2px;"></a>
             </div>
-            <div id="mainListDiv" class="main_list">
-                <ul class="navlinks">
-                    <li><a href=".home">Home</a></li>
-                    <li><a href="#">Booking</a></li>
-                    <li><a href="#">CabPartners</a></li>
-                    <li><a href="#">AboutUs</a></li>
-                </ul>
-            </div>
-            <span class="navTrigger">
-                <i></i>
-                <i></i>
-                <i></i>
-            </span>
+    </div>
+    <div class="navbar-collapse collapse" id="my-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li class=""><a href="#uk-home">Home</a></li>
+        <li class=""><a href="#about">Areas</a></li>
+        <li class=""><a href="#portfolio">Services</a></li>
+        <li class=""><a href="#contact">Contact</a></li>
+          <li class="uk-line-link"><a href="#contact">Book Now</a></li>
+      </ul>
+    </div>
+          </div>
+  </div>
+</div>
+            </header>
+        <!-- /.navbar -->
+        
+        <!--home-->
+        <section class="main">
+          
+        <div class="uk-home">
             
-        </div>
-        
-    </nav>
-    
-
-    <section class="home">
-        <div class = "booking">
+            <div class="uk-home-heading">
+            <h1 class="uk-top">Pick The Best Among Best</h1>
+                <h2 class="uk-home-sub">Compare & Book</h2>
+                </div>
+            
+            
+        <div class = "booking overlay">
         <div class ="ftitle">Compare and Book Cheap Taxis!</div>
             <div class="inputfield">
                 <div class="fitem">
@@ -91,114 +109,227 @@
              
     <div class="textfield">
                 
-    <input type="text" class="form-control " id="search_input" placeholder="Enter Pickup Location" />
+    <input type="text" class="form-control " id="search_pinput" placeholder="Enter Pickup Location" />
  </div>
                 <div class="textfield">
                 
-    <input type="text" class="form-control " id="search_input" placeholder="Enter drop Location" />
+    <input type="text" class="form-control " id="search_dinput" placeholder="Enter drop Location" />
  </div>
 
             <div class="button">
             <button class="btn">Get Quote</button>
             </div>
                     
+            <div class="dt">
             
-            
-            
-           
+            </div>
         </div>
-
-
-
-
-
-
-
-    </section>
-    <div class = "about">
-        <!-- just to make scrolling effect possible -->
-			<h2 class="myH2">MiniCabee-Gatwick airport Taxis & minicab services</h2>
-			
-				<p class="myP">
-                    Gatwick airport taxi From gatwick airport also known as London Gatwick LGW is is a major international airport near Crawley in West Sussex, southeast England with two two terminals North terminal ans South terminal . It is the second-busiest airport by total passenger traffic in the UK, after Heathrow Airport .Gatwick is the ninth-busiest airport in Europe If you are landing at London Gatwick airport and looking for a reliable Gatwick airport taxi ,cab, MiniCab to take you to the city,home, hotel, station,cruise port, school/colleges,regardless of your destination, you need a first-hand experienced taxi service provider, who can cater to the different needs of the riders.
-                    <br>
-                    <br>
-                    <br>
-				
-			</p>
-    </div>
-    <div class = "about1">
-        <!-- just to make scrolling effect possible -->
-			<h2 class="myH21">An all-time and easily accessible service</h2>
-			
-				<p class="myP1">
-                   Gatwick Taxis-MiniCabee From gatwick airport to AB1 Aberdeenshire services will ensure to take you from London Gatwick Airport to any location in UK in a convenient and affordable manner. We are available 24*7*365. Our bookings are as simple as making a phone call, a short-quick voice chat or just sending out an email with your transfer details or by simply online booking form https://minicabee.co.uk. We will have the driver details and cab arriving at your way within clicks of your device.
-				<br><br><br>
-				
-			</p>
-    </div>
-     <div class = "about">
-        <!-- just to make scrolling effect possible -->
-			<h2 class="myH2">Minicabee Quote Comparison</h2>
-			
-				<p class="myP">
-                    Minicabee helps to get a best with cheap fare minicab and Taxi services. MiniCabee is the best one for get the reliable with the comfortbale cab serivice From gatwick with the base of price comparsion Booking system where we provide Quotes to your different pickups and dropoff. We are 100% guarantee you will get the best cab service provider for your journey before you leving our website
-
-
-Using Minicab Services in United Kingdom is Usual but you want to be your minicab ride with comfortable price and comfortable time with quality of service works only at Minicabee, We cover all over United Kingdom especially airports ,stations , sea ports , hotels , schools , universities , hospitals , events ,etc,... Book a cheap taxi online in MiniCabee and enjoy your ride with best in class . MiniCabee offer taxis for all your needs in all around UK.
-			<br><br><br>	
-			</p>
-    </div>
+                </div>
+          
+         
+      
+            </section>
+        <!--/home-->
+        <!--feedback banner-->
+    
+ <div class="uk-fb">         
    
+<div class="container">
+     <h2>What our <span class="blue">Customer Says !</span></h2>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+                    <!-- Carousel Slides / Quotes -->
+                    <div class="carousel-inner text-center">
+                       
+                        <!-- Quote 1 -->
+                        <div class="item active">
+                            <blockquote>
+                                <div class="row">
+                                    <div class="col-sm-8 col-sm-offset-2">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. !</p>
+                                        <small>Someone famous</small>
+                                    </div>
+                                </div>
+                            </blockquote>
+                        </div>
+                        <!-- Quote 2 -->
+                        <div class="item">
+                            <blockquote>
+                                <div class="row">
+                                    <div class="col-sm-8 col-sm-offset-2">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                                        <small>Someone famous</small>
+                                    </div>
+                                </div>
+                            </blockquote>
+                        </div>
+                        <!-- Quote 3 -->
+                        <div class="item">
+                            <blockquote>
+                                <div class="row">
+                                    <div class="col-sm-8 col-sm-offset-2">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                        <small>Someone famous</small>
+                                    </div>
+                                </div>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <!-- Bottom Carousel Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#quote-carousel" data-slide-to="0" class="active"><img class="img-responsive " src="https://s3.amazonaws.com/uifaces/faces/twitter/mantia/128.jpg" alt="">
+                        </li>
+                        <li data-target="#quote-carousel" data-slide-to="1"><img class="img-responsive" src="https://s3.amazonaws.com/uifaces/faces/twitter/adhamdannaway/128.jpg" alt="">
+                        </li>
+                        <li data-target="#quote-carousel" data-slide-to="2"><img class="img-responsive" src="https://s3.amazonaws.com/uifaces/faces/twitter/brad_frost/128.jpg" alt="">
+                        </li>
+                    </ol>
+
+                    <!-- Carousel Buttons Next/Prev -->
+                    <a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
+                    <a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </div>
+      
+    </div>
+     </div>
+         
+       <!--/feedback-->
+         <!--About-->
+        <section class="uk-about">
         
-        <div class="left">
-            <div class="item" data-aos="zoom-in-up" data-aos-anchor-placement="top-center">
-                <img src="https://minicabee.co.uk/assets/images/shield.png">
+            <div class="container">
+                <h1 class="text-center uk-add">Our  <span class="blue"> Services</span></h1>
+
+  <!--  image left  -->
+  <div class="row">
+    <div class="col-md-6 uk-image " align="center" data-aos="zoom-in-right">
+
+      <img src="./assests/img/about1.jpg" alt="" class="w-100 img-responsive img-center" />
+    </div>
+    <!-- /.col-md-6 -->
+    <div class="col-md-6 uk-text">
+
+      <div class="row align-items-center h-100">
+        <div class="col" data-aos="zoom-in-left">
+          <h1 class="display-3">Vertically Centered Text</h1>
+          <p class="uk-lead">Flexbox grids help you build some really nice layouts.
+           
+          </p>
+
+        </div>
+      </div>
+
+    </div>
+    <!-- /.col-md-6 -->
+
+  </div>
+  <!-- /.row -->
+
+  <!--  image right  -->
+  <div class="row uk-ri">
+    <div class="col-md-6 col-md-push-6 uk-image" align="center" data-aos="zoom-in-left">
+
+      <img src="./assests/img/about2.jpg" alt="" class="w-100" />
+    </div>
+    <!-- /.col-md-6 -->
+    <div class="col-md-6 col-md-pull-6 uk-textr" align="right">
+
+      <div class="row align-items-center h-100">
+        <div class="col" data-aos="zoom-in-right">
+          <h1 class="display-3">Vertically Centered Text</h1>
+          <p class="uk-lead">Push and pull classes were added to change the order on desktop but still have the image before the text on mobile.
+           
+          </p>
+
+        </div>
+      </div>
+
+    </div>
+    <!-- /.col-md-6 -->
+
+  </div>
+  <!-- /.row -->
+                
+                <!--  image left  -->
+  <div class="row">
+    <div class="col-md-6 uk-image" align="center" data-aos="zoom-in-right">
+
+      <img src="./assests/img/about3.jpg" alt="" class="w-100" />
+    </div>
+    <!-- /.col-md-6 -->
+    <div class="col-md-6 uk-text">
+
+      <div class="row align-items-center h-100">
+        <div class="col" data-aos="zoom-in-left">
+          <h1 class="display-3">Vertically Centered Text</h1>
+          <p class="uk-lead">Flexbox grids help you build some really nice layouts.
+           
+          </p>
+
+        </div>
+      </div>
+
+    </div>
+    <!-- /.col-md-6 -->
+
+  </div>
+
+</div>
+        </section>
+         <!--/About-->
+        <!-- key features -->
+        
+        <section>
+            <div class="uk-features">
+            <dic class="container">
+                  <h2>Why <span class="blue">Us ?</span></h2>
+                <div class="row">
+                   <div class="uk-boxcontent col-sm-12">
+                        <div class="col-sm-4 uk-box">
+                           <img src="https://minicabee.co.uk/assets/images/shield.png" alt="" data-aos="zoom-in-up" class="aos-init center">
+                            <h4>
+                            <span class="uk-line">Secure and</span>
+                                safe
+                            </h4>
+                            <p>Well Experince Drivers with all the required documents verified. Any Issue with Driver Immediate Actions Noted.</p>
+                       </div>
+                        <div class="col-sm-4 uk-box">
+                           <img src="https://minicabee.co.uk/assets/images/hidden.png" alt="" data-aos="zoom-in-up" class="aos-init center">
+                            <h4>
+                            <span class="uk-line">No Hidden</span>
+                                Charges
+                            </h4>
+                            <p>Well Experince Drivers with all the required documents verified. Any Issue with Driver Immediate Actions Noted.</p>
+                       </div>
+                        <div class="col-sm-4 uk-box uk-box-last">
+                           <img src="https://minicabee.co.uk/assets/images/car.png" alt="" data-aos="zoom-in-up" class="aos-init center" align="center">
+                            <h4>
+                            <span class="uk-line">Discount</span>
+                                for sure
+                            </h4>
+                            <p>Well Experince Drivers with all the required documents verified. Any Issue with Driver Immediate Actions Noted.</p>
+                       </div>
+                    </div>
+                </div>
+                </dic>
             </div>
             
-            <div class="blackline" data-aos="zoom-in-right" data-aos-anchor-placement="top-center">Secure and Safer Rides</div>
-            <div class="blockp">Well Experince Drivers with all the required documents verified. Any Issue with Driver Immediate Actions Noted</div>
             
-            
-        </div>
-        <div class="right">
-        <div class="item" data-aos="fade-up" data-aos-anchor-placement="top-center">
-                <img src="https://minicabee.co.uk/assets/images/hidden.png">
-            </div>
-            
-            <div class="blacklinew" data-aos="zoom-in-left" data-aos-anchor-placement="top-center">No Hidden Charges</div>
-            <div class="blockpw">There is Hidden Charges applied for the customers at any cost.Passengers are acknowledged by the Fares and Additional charges.</div>
-            
-            
-        </div>
-    <div class="lefta">
-            <div class="item" data-aos="fade-up" data-aos-anchor-placement="top-center">
-                <img src="https://minicabee.co.uk/assets/images/shield.png">
-            </div>
-            
-            <div class="blacklinew" data-aos="zoom-in-right" data-aos-anchor-placement="top-center">Secure and Safer Rides</div>
-            <div class="blockpw">Well Experince Drivers with all the required documents verified. Any Issue with Driver Immediate Actions Noted</div>
-            
-            
-        </div>
-        <div class="righta">
-        <div class="item" data-aos="fade-up" data-aos-anchor-placement="top-center">
-                <img src="https://minicabee.co.uk/assets/images/hidden.png">
-            </div>
-            
-            <div class="blackline" data-aos="zoom-in-left" data-aos-anchor-placement="top-center">No Hidden Charges</div>
-            <div class="blockp">There is Hidden Charges applied for the customers at any cost.Passengers are acknowledged by the Fares and Additional charges.</div>
-            
-            
-        </div>
-    
-    
-    
- 
-    <!-- Footer -->
-   
-    
-  <footer class="footer-area footer--light">
+        
+        </section>
+        <!-- /key-->
+        
+        
+        
+        
+        
+        
+        <!--footer-->
+       <section class="uk-foot">
+        <footer class="footer-area footer--light">
   <div class="footer-big">
     <!-- start .container -->
     <div class="container">
@@ -206,16 +337,16 @@ Using Minicab Services in United Kingdom is Usual but you want to be your minica
         <div class="col-md-3 col-sm-12">
           <div class="footer-widget">
             <div class="widget-about">
-              <img src="http://placehold.it/250x80" alt="" class="img-fluid">
-              <p>Что если тут написать другой текст на русском языке, для проверки шрифта Rubik )</p>
+              <img src="http://www.fasttrackcabs.com/css/img/logo.svg" alt="" class="img-fluid">
+              <p>Gatwick airport taxi From gatwick airport also known as London Gatwick LGW is is a major international airport near Crawley in West Sussex, southeast England with two two terminals North terminal ans South terminal</p>
               <ul class="contact-details">
                 <li>
                   <span class="icon-earphones"></span> Call Us:
-                  <a href="tel:344-755-111">344-755-111</a>
+                  <a href="tel:344-755-111">**********</a>
                 </li>
                 <li>
                   <span class="icon-envelope-open"></span>
-                  <a href="mailto:support@aazztech.com">support@aazztech.com</a>
+                  <a href="mailto:support@aazztech.com">support@uktaxi.com</a>
                 </li>
               </ul>
             </div>
@@ -286,7 +417,7 @@ Using Minicab Services in United Kingdom is Usual but you want to be your minica
         <!-- end /.col-lg-3 -->
 
         <div class="col-md-3 col-sm-4">
-          <div class="footer-widget">
+          <div class="footer-widget ft-last">
             <div class="footer-menu no-padding">
               <h4 class="footer-widget-title">Help Support</h4>
               <ul>
@@ -331,9 +462,8 @@ Using Minicab Services in United Kingdom is Usual but you want to be your minica
       <div class="row">
         <div class="col-md-12">
           <div class="copyright-text">
-            <p>© 2018
-              <a href="#">DigiPro</a>. All rights reserved. Created by
-              <a href="#">AazzTech</a>
+            <p>copyrights @ 2019
+              <a href="#">UK-taxi</a>. All rights reserved. 
             </p>
           </div>
 
@@ -345,68 +475,16 @@ Using Minicab Services in United Kingdom is Usual but you want to be your minica
     </div>
   </div>
 </footer>
-
-   
-<!-- Jquery needed -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="js/scripts.js"></script>
-
-<!-- Function used to shrink nav bar removing paddings and adding black background -->
-    <script>
-        $(window).scroll(function() {
-            if ($(document).scrollTop() > 50) {
-                $('.nav').addClass('affix');
-                console.log("OK");
-            } else {
-                $('.nav').removeClass('affix');
-            }
-        });
-    </script>
-    <script>
-        $('.navTrigger').click(function () {
-    $(this).toggleClass('active');
-    console.log("Clicked menu");
-    $("#mainListDiv").toggleClass("show_list");
-    $("#mainListDiv").fadeIn();
-
-});
-    </script>
+           </section>
+        <!--/footer-->
+        
+    </body>
+    
     
     <script>
+     
     AOS.init({
   duration: 1000,
 })
     </script>
-    
-    <script>
-    var searchInput = 'search_input';
-
-$(document).ready(function () {
-    var autocomplete;
-    autocomplete = new google.maps.places.Autocomplete((document.getElementById(searchInput)), {
-        types: ['geocode'],
-    });
-	
-    google.maps.event.addListener(autocomplete, 'place_changed', function () {
-        var near_place = autocomplete.getPlace();
-        document.getElementById('loc_lat').value = near_place.geometry.location.lat();
-        document.getElementById('loc_long').value = near_place.geometry.location.lng();
-		
-        document.getElementById('latitude_view').innerHTML = near_place.geometry.location.lat();
-        document.getElementById('longitude_view').innerHTML = near_place.geometry.location.lng();
-    });
-});
-    </script>
-    
-    <script>
-    var autocomplete;
-autocomplete = new google.maps.places.Autocomplete((document.getElementById(searchInput)), {
-    types: ['geocode'],
-    componentRestrictions: {
-        country: "USA"
-    }
-});
-    </script>
-   
-    
-    </html>
+</html>

@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Neuton&display=swap');
+.container h2{
+    font-family: 'Neuton', serif;
+    font-weight: 200;
+    font-size: 3.3em;
+    padding-bottom: 10px;
+    vertical-align: middle;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+.blue{
+    color: #67d1d2;
+}
+.uk-box img.center{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    
+}
+
+.uk-box h4{
+    padding-top: 20px;
+    padding-left: 10px;
+    margin: 5px 0px 30px;
+    font: 18px/24px 'Neuton', serif;
+    color: #000;
+    text-align: center;
+    
+}
+.uk-line{
+    border-bottom: 3px solid #67d1d2;
+    padding-bottom: 5px;
+}
+
+.uk-box p{
+    font-weight: 50;
+    font-family: 'Neuton', serif;
+    color: #484848;
+    font-size: 16px;
+    padding-right: 20px;
+}
+.uk-box-last{
+    padding-right: 0px !important;
+}
+.uk-features{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
