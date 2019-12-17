@@ -96,7 +96,7 @@ select {
     .booking{
         max-width:100%;
         background: #fff !important;
-        z-index: 100;
+        z-index: 0px;
         top: -90px !important;
         margin-left: 0px;
         margin-right: 0px;

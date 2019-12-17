@@ -24,6 +24,11 @@
 
 }
 
+.uk-header{
+    position: relative;
+    display: block;
+}
+
 
 
 .uk-home-heading h1{
