@@ -1,3 +1,6 @@
+.uk-header{
+    z-index: 300;
+}
 .navbar-collapse ..navbar-header{
     font-size: 20px;
     color: rgba(0, 0, 0, 0.8);

@@ -105,7 +105,7 @@ font-weight: 300;
     .uk-lead{
         font-size: 16px;
         padding: 10px !important;
-        text-align: center;
+        text-align: center !important;
     }
     .display-3{
         font-size: 25px;

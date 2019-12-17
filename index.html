@@ -4,6 +4,12 @@
     <title>
     UK-TAXI
     </title>
+    <!--place-->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=AIzaSyDgJNbx7wr01p7h2a0psOsVieTc7Ge1LB8"></script>
+
+    <!--/place-->
+    
      <!--AOS-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -113,7 +119,7 @@
  </div>
                 <div class="textfield">
                 
-    <input type="text" class="form-control " id="search_dinput" placeholder="Enter drop Location" />
+    <input type="text" class="form-control " id="search_dinput1" placeholder="Enter drop Location" />
  </div>
 
             <div class="button">
@@ -487,4 +493,56 @@
   duration: 1000,
 })
     </script>
+    
+    
+    
+     <script>
+    var searchpInput = 'search_pinput';
+  
+
+$(document).ready(function () {
+    var autocomplete;
+    autocomplete = new google.maps.places.Autocomplete((document.getElementById(searchpInput)), {
+        types: ['geocode'],
+    });
+	
+   
+});
+    </script>
+    
+    <script>
+    var autocomplete;
+autocomplete = new google.maps.places.Autocomplete((document.getElementById(searchpInput)), {
+    types: ['geocode'],
+    componentRestrictions: {
+        country: "USA"
+    }
+});
+    </script>
+    
+    
+      <script>
+    var searchdInput1 = 'search_dinput1';
+  
+
+$(document).ready(function () {
+    var autocomplete1;
+    autocomplete1 = new google.maps.places.Autocomplete((document.getElementById(searchdInput1)), {
+        types: ['geocode'],
+    });
+	
+   
+});
+    </script>
+    
+    <script>
+    var autocomplete1;
+autocomplete1 = new google.maps.places.Autocomplete((document.getElementById(searchdInput1)), {
+    types: ['geocode'],
+    componentRestrictions: {
+        country: "USA"
+    }
+});
+    </script>
+    
 </html>
