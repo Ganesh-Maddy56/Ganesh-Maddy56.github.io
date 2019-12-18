@@ -99,6 +99,7 @@ font-weight: 300;
 @media (max-width: 979px){
     .uk-about{
         width: 100%;
+        height: 500px;
         
     }
     
